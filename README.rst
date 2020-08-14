@@ -14,5 +14,12 @@ Usage
    docker run --rm -e PGPASSWORD=secret -v $tests_dir:/t \
      disaykin/pgtap:latest [-h DBHOST] [-p DBPORT] [-U DBUSER] [-d DBNAME] -t /t/*.sql
 
+Build
+-----
+
+.. code-block:: bash
+
+    docker build --network host -t disaykin/pgtap .
+
 
 .. _pgTap: https://pgtap.org/
